@@ -1,0 +1,228 @@
+/* @media screen and (min-width: 481px) {
+  .visual {
+      margin-top: 120px;
+      background-image: url("../images/visual_bg.jpg"); 
+      background-position: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .visual {
+      margin-top: 75px;
+      background-image: url("../images/visual_bg.jpg"); 
+      background-position: center;
+  }
+}
+.visual .inner {
+  height: 646px;
+} */
+
+.sub{
+  margin-top: 120px;
+  padding: 20px 0 150px;
+  /* background-image: url('../images/signin_bg.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.sub h1{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#container {
+    width: 100%;
+}
+
+.sub .sub_tit_wrap {
+  width: 100%;
+  height: 98px;
+  background: #ffffff;
+}
+.sub .sub_tit_wrap div.sub_tit_inner {
+  width: 85%;
+  height: 91px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto ;
+  display: table;
+  text-align: center;
+  clear: both;
+}
+
+@media screen and (min-width: 481px) {
+  .side {
+    float: left;
+    width: 20%;
+    margin: 0 auto ;
+    text-align: left;
+    
+  }
+  .right {
+    float: left;
+    width: 80%;
+    margin: 0 10 0 10 ;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .side {
+    display: none; 
+  }
+  .right {
+    float: left;
+    width: 100%;
+    margin: 0 auto ;
+    text-align: center;
+  }
+}
+
+
+
+div.sub_kind_wrap {
+  padding: 30px 30px 0 30px;
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  
+  text-align: center;
+}
+div.sub_kind_left_wrap {
+  padding: 0px 8px 0px 0px;
+  border: 1px solid rgb(255, 255, 255);
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+   
+ul.smap {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+ul.smap img.arrow {
+  position: relative;
+  top: 2px;
+}
+ul.smap li {
+  vertical-align: middle;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 2.5px;
+}
+
+img._center {
+  display: block; 
+  margin: 0px auto;
+}
+.CEO_greetings {
+  font-family: 'Noto Sans KR';
+  background: url(../images/sub/ceo_circle.png) top left no-repeat;
+  text-align: right;
+}
+.CEO_greetings h3 {
+  font-size: 16px;
+  color: black;
+  line-height: 20px;
+  font-family: 'Nanum Gothic';
+}
+.CEO_greetings h3.tit {
+  font-size: 17px;
+  color:black; 
+  line-height: 20px;
+  font-family: 'Nanum Gothic';
+}
+.CEO_greetings h3 strong {
+  font-weight: 800;
+  color: #dc6bf8;
+}
+.CEO_greetings h3 b {
+  font-weight: 800;
+  color: saddlebrown;
+}
+.CEO_greetings h4 {
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: 'Nanum Gothic';
+}
+.CEO_greetings h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: 'Nanum Gothic';
+}
+.CEO_greetings h5._left {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: 'Nanum Gothic';
+  text-align: left;
+}
+.CEO_greetings h5._right {
+  text-align: right;
+}
+.side ._title {
+  display: block;
+  margin: 0 0 25px 0;
+  padding-left: 10px;
+  background: url(../images/titlebar.png) no-repeat left 2px;
+  font-family: 'Nanum Gothic','Malgun Gothic',돋움,sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+}
+.side ul.menu{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.side ul.menu li{
+
+  position: relative;
+  display: block;
+  padding: 16px 12px;
+  font-family: 'Nanum Gothic','Malgun Gothic',돋움,sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #808080;
+  text-decoration: none;
+  text-shadow: none;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 1px solid #eaeaea;
+}
+.side ul.menu li.current{
+  font-weight: 900;
+  color: black;
+}
+/* .side ul.menu li::before{
+  content: " ";
+  width: 1px;
+  height: 12px;
+  background-color: #9c9c9c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+} 
+
+.side ul.menu li a{
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+
+}*/
+
+.side ul.menu li a:hover{
+  color: #000;
+}
