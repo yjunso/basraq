@@ -95,6 +95,14 @@ div.sub_kind_wrap {
   
   text-align: center;
 }
+div.sub_kind_left_wrap_line {
+  padding: 0px 8px 0px 0px;
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  text-align: left;
+}
 div.sub_kind_left_wrap {
   padding: 0px 8px 0px 0px;
   border: 1px solid rgb(255, 255, 255);
@@ -225,4 +233,75 @@ img._center {
 
 .side ul.menu li a:hover{
   color: #000;
+}
+
+
+.right ul._hist{
+  border-width: 0px 0px 1px; 
+  list-style: none; 
+  margin: 0px; 
+  padding: 0px; 
+  line-height: 12px; 
+  font-family: '맑은 고딕', 'malgun gothic', '돋움', 'dotum', 'AppleGothic', 'sans-serif'; 
+  font-size: 12px; 
+  vertical-align: baseline; 
+  /*border-bottom-color: rgb(192, 195, 202); 
+  border-bottom-style: solid; */
+  background-color: rgb(255, 255, 255);
+  
+  background: url("/images/sub/hist_bg1.png") no-repeat right/60%;
+}
+.right ul._hist:last-child{
+  border-bottom-color: rgb(255, 255, 255); 
+}
+.right ul._hist li{
+  border-width: 0px 0px 1px; 
+  padding: 20px 0px 18px; 
+  margin-right: 0px; 
+  margin-left: 0px; 
+  vertical-align: baseline; 
+  /*border-bottom-color: rgb(236, 237, 239); 
+  border-bottom-style: solid;*/
+}
+
+.right ul._hist li:last-child{
+  border-bottom-color: rgb(255, 255, 255); 
+}
+
+.right ul._hist li strong._year{
+  margin: 0px; 
+  padding: 4px 0px 0px; 
+  border: 0px currentColor; 
+  border-image: none; 
+  width: 135px; 
+  text-align: center; 
+  color: rgb(0, 108, 184); 
+  font-family: Tahoma; 
+  font-size: 14px; 
+  vertical-align: top; 
+  display: inline-block;
+}
+
+.right ul._hist li ul{
+  list-style: none; 
+  margin: 0px; 
+  padding: 0px; 
+  border: 0px currentColor; 
+  border-image: none; 
+  width: 60%; 
+  vertical-align: baseline; 
+  display: inline-block; 
+}
+.right ul._hist li ul li{
+  padding: 0px; 
+  border: 0px currentColor; 
+  border-image: none; 
+  color: rgb(102, 111, 132); 
+  line-height: 1.6; 
+  margin-right: 0px; 
+  margin-left: 0px; 
+  vertical-align: baseline;
+}
+.right ul._hist li ul li span{
+  margin: 0px; padding: 0px 10px 0px 0px; border: 0px currentColor; border-image: none; color: rgb(70, 75, 85); font-family: Tahoma; font-size: 14px; font-weight: bold; vertical-align: baseline;
 }
