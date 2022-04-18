@@ -135,7 +135,7 @@ img._center {
 }
 .CEO_greetings {
   font-family: 'Noto Sans KR';
-  background: url(../images/sub/ceo_circle.png) top left no-repeat;
+  background: url("/images/sub/ceo_circle.png") top left no-repeat;
   text-align: right;
 }
 .CEO_greetings h3 {
@@ -183,7 +183,7 @@ img._center {
   display: block;
   margin: 0 0 25px 0;
   padding-left: 10px;
-  background: url(../images/titlebar.png) no-repeat left 2px;
+  background: url("/images/titlebar.png") no-repeat left 2px;
   font-family: 'Nanum Gothic','Malgun Gothic',돋움,sans-serif;
   font-weight: 700;
   font-size: 16px;

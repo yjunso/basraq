@@ -125,7 +125,7 @@ header{
     margin: auto;  
   }
   header h1.logo a {
-    background:url("../images/basraq_logo_75.png");   background-size:162px auto; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; 
+    background:url("/images/basraq_logo_75.png");   background-size:162px auto; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; 
   }
 }
 @media screen and (max-width: 480px) {
@@ -140,7 +140,7 @@ header{
     width: 81px;
   }
   header h1.logo a { 
-    background:url("../images/basraq_logo_75.png"); background-size:81px auto; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; 
+    background:url("/images/basraq_logo_75.png"); background-size:81px auto; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; 
   }
 }
 header .sub-menu{
@@ -285,7 +285,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
 header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
-  background-image: url("../images/main_menu_pattern.jpg");
+  background-image: url("/images/main_menu_pattern.jpg");
 }
 header .main-menu .item .item__contents .contents__texture h4 {
   color: #999;
