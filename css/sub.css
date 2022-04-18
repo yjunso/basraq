@@ -305,3 +305,41 @@ img._center {
 .right ul._hist li ul li span{
   margin: 0px; padding: 0px 10px 0px 0px; border: 0px currentColor; border-image: none; color: rgb(70, 75, 85); font-family: Tahoma; font-size: 14px; font-weight: bold; vertical-align: baseline;
 }
+
+div.factory_wrap {
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+div.factory_content {
+  width: 1100px;  
+  margin: 0 auto 80px ; 
+} 
+@media screen and (min-width: 961px) and (max-width: 1099px){
+  div.factory_content {
+      width: 96%;
+      margin: 0 auto;
+      left: auto;
+  }
+}
+@media screen and (min-width:641px) and (max-width:960px) {
+  div.factory_content {
+      width: 96%;
+      margin-left: -48%;
+  }
+} 
+@media screen and (max-width:640px) {
+  div.factory_content { 
+    width:96%; 
+    margin:0 auto; 
+    left:auto; 
+  }
+}
+
+
+div.factory_wrap h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin: 0 0 20px 0;
+}
