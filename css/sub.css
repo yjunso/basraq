@@ -105,13 +105,14 @@ div.sub_kind_left_wrap_line {
 }
 
 div.sub_kind_right_wrap_noline {
-  padding: 0px 8px 0px 0px;
+  padding: 0px 6px 0px 6px;
   border: 0px solid #ddd;
   position: relative;
   border-radius: 10px;
   margin-bottom: 4px;
   text-align: left;
 }
+
 
 div.sub_kind_left_wrap {
   padding: 0px 8px 0px 0px;
@@ -330,26 +331,55 @@ a{
   margin: 0px; padding: 0px 10px 0px 0px; border: 0px currentColor; border-image: none; color: rgb(70, 75, 85); font-family: Tahoma; font-size: 14px; font-weight: bold; vertical-align: baseline;
 }
 
+
+
+/* factory */
 div.factory_wrap {
   background: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
+}
+div.factory_2nd_wrap {
+  background: #f4f4f2;
+  margin-bottom: 10px;
+}
+
+div.factory_2nd_wrap h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  padding-top: 20px;
 }
 
 div.factory_content {
   width: 1100px;  
-  margin: 0 auto 80px ; 
+  margin: 0 auto 40px ; 
 } 
+p.cultivation_img { 
+  float:left; 
+  width:402px; 
+}
 @media screen and (min-width: 961px) and (max-width: 1099px){
   div.factory_content {
       width: 96%;
       margin: 0 auto;
       left: auto;
   }
+  p.cultivation_img {
+    width: 50%;
+  }
+
 }
 @media screen and (min-width:641px) and (max-width:960px) {
   div.factory_content {
-      width: 96%;
-      margin-left: -48%;
+    width:96%; 
+    margin:0 auto; 
+    left:auto; 
+  }
+  p.cultivation_img {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6%;
   }
 } 
 @media screen and (max-width:640px) {
@@ -358,15 +388,22 @@ div.factory_content {
     margin:0 auto; 
     left:auto; 
   }
+  p.cultivation_img {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6%;
+  }
 }
 
 
-div.factory_wrap h3 {
+h3 {
   font-size: 18px;
   font-weight: bold;
   color: #222;
   margin: 0 0 20px 0;
 }
+
 
 div.coffeeCultivation_wrap { 
   background:#fff; 
@@ -381,13 +418,11 @@ div.cultivation_wrap:after {
   display:block; 
   clear:both; 
 }
-p.cultivation_img { 
-  float:left; 
-  width:402px; 
-}
+
+
 div.cultivation_text { 
   float:left; 
-  width:520px; 
+  width:500px; 
   padding:0 0 0 30px; 
 }
 div.cultivation_text h3 { 
