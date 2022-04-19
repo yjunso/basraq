@@ -103,6 +103,16 @@ div.sub_kind_left_wrap_line {
   margin-bottom: 4px;
   text-align: left;
 }
+
+div.sub_kind_right_wrap_noline {
+  padding: 0px 8px 0px 0px;
+  border: 0px solid #ddd;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
 div.sub_kind_left_wrap {
   padding: 0px 8px 0px 0px;
   border: 1px solid rgb(255, 255, 255);
@@ -208,10 +218,7 @@ img._center {
   outline: none;
   border-bottom: 1px solid #eaeaea;
 }
-.side ul.menu li.current{
-  font-weight: 900;
-  color: black;
-}
+
 /* .side ul.menu li::before{
   content: " ";
   width: 1px;
@@ -230,11 +237,28 @@ img._center {
   color: #656565;
 
 }*/
-
+a{
+  font-size: 14px;
+  color: gray;
+}
+.side ul.menu li a{
+  font-size: 13px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+.side ul.menu li a._current{
+  font-size: 14px;
+  font-weight: 990;
+  color: black;
+}
 .side ul.menu li a:hover{
   color: #000;
 }
-
+/* .side ul.menu li.current{
+  font-weight: 900;
+  color: black;
+} */
 
 .right ul._hist{
   border-width: 0px 0px 1px; 
@@ -343,3 +367,55 @@ div.factory_wrap h3 {
   color: #222;
   margin: 0 0 20px 0;
 }
+
+div.coffeeCultivation_wrap { 
+  background:#fff; 
+  margin-bottom:60px; 
+}
+    
+div.cultivation_wrap { 
+  padding-bottom:45px; 
+}
+div.cultivation_wrap:after { 
+  content:""; 
+  display:block; 
+  clear:both; 
+}
+p.cultivation_img { 
+  float:left; 
+  width:402px; 
+}
+div.cultivation_text { 
+  float:left; 
+  width:520px; 
+  padding:0 0 0 30px; 
+}
+div.cultivation_text h3 { 
+  font-size:18px; 
+  font-weight:bold; 
+  color:#222; 
+  margin:0 0 20px 0; 
+}
+div.cultivation_text p.t1 { 
+  font-size:14px; 
+  color:#444; 
+  line-height:1.6; 
+  padding-bottom:30px; 
+}
+div.cultivation_text p.t2 { 
+  font-size:14px; 
+  color:#444; 
+  line-height:1.6; 
+}
+
+dl.cultivation_text { float:left; width:402; padding:0 0 0 30px; }
+dl.cultivation_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; }
+dl.cultivation_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; } 
+/* 
+div.coffeeCultivation_wrap div.cultivation_wrap { padding-bottom:0; }
+div.coffeeCultivation_wrap h3 { font-size:18px; font-weight:bold; color:#222; margin:0 0 20px 0; }
+div.coffeeCultivation_wrap dl.cultivation_text { float:left; width:520px; padding:0 0 0 30px; }
+div.coffeeCultivation_wrap dl.cultivation_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; }
+div.coffeeCultivation_wrap dl.cultivation_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; } */
+
+
