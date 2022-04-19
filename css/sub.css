@@ -57,7 +57,7 @@
   clear: both;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 641px) {
   .side {
     float: left;
     width: 20%;
@@ -72,7 +72,7 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .side {
     display: none; 
   }
