@@ -18,10 +18,10 @@ a{
   text-decoration: none;
 }
 .inner{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   position: relative;    
-}
+} 
 .btn{
   width: 130px;
   padding: 10px;
@@ -112,6 +112,10 @@ header{
 }
 
 @media screen and (min-width: 641px) {
+  header .tablet_inner {
+    display: none;
+  }
+
   header > .inner{
     height: 120px;
   }
@@ -129,8 +133,17 @@ header{
   }
 }
 @media screen and (max-width: 640px) {
-  header > .inner{
+  header .tablet_inner {
+    background: #f6f5ef;
     height: 75px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+  header > .inner{
+    display: none;
   }
   header h1.logo {
     height: 37px;
