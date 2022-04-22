@@ -1,9 +1,14 @@
 .visual {
+    width: 100%;
     background-image: url("/images/visual_bg.jpg") ;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size:cover;
+    box-sizing: border-box;
+    max-width: 1130px;
     height: 646px;
+    margin: auto; left: 0; right: 0; top: 120px; bottom: 0; 
+    
 }
 
 @media screen and (max-width: 1400px) {
@@ -16,31 +21,29 @@
         height: 58vw;
     }
 }
+@media screen and (max-width: 960px) {
+    .visual {
+        height: 59vw;
+        margin-top: 70px;
+    }
+}
 @media screen and (max-width: 800px) {
     .visual {
         height: 60vw;
     }
 }
-@media screen and (max-width: 740px) {
-    
-}
-@media screen and (min-width: 641px) {
-    .visual {
-        margin-top: 120px;
-    }
-}
 @media screen and (max-width: 640px) {
     .visual {
-        margin-top: 75px;
     }
 }
 
 .visual .inner {
-    position: relative;
     box-sizing: border-box;
     max-width:1130px;
     height: 100%;
     margin: 0 auto;
+    margin: auto auto;
+    text-align: center;
 }
 .visual .title {
     position: absolute;
