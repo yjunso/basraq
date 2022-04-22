@@ -107,6 +107,9 @@ header{
   border-bottom: 1px solid #c8c8c8;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+      
   /* layer */
   z-index: 9; 
 }
@@ -123,8 +126,11 @@ header{
   }
 
   header > .inner{
-    height: 120px;    
-    max-width:1130px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1130px;
   }
   header h1.logo{
     height: 75px;
