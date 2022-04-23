@@ -1,16 +1,17 @@
 .visual {
     width: 100%;
-    background-image: url("/images/visual_bg.jpg") ;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size:cover;
-    box-sizing: border-box;
-    height: 646px;
     margin: auto; 
     left: 0; right: 0; top: 120px; bottom: 0; 
-    padding: 0;
+}
+.visual.top {
+    background-image: url("/images/visual_bg.jpg") ;
+    height: 646px;
     margin-top: 120px;
-    overflow-x: hidden;
+}
+.visual.product {
+    background-image: url("/images/season_product_bg.jpg") ;
+    height: 400px;
 }
 /* 
 @media screen and (max-width: 1400px) {
@@ -18,38 +19,21 @@
         background-position:63% bottom;
     }
 } */
-@media screen and (max-width: 1130px) {
-    .visual {
-        height: 58vw;
-    }
-}
-@media screen and (max-width: 960px) {
-    .visual {
-        height: 59vw;
-        margin-top: 70px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .visual {
-        height: 60vw;
-    }
-}
-@media screen and (max-width: 640px) {
-    .visual {
-    }
-}
-
-.visual .inner {
-    box-sizing: border-box;
-    max-width:1130px;
-    height: 100%;
+.inner {
+    /* width는 항상 100%가 되어야 함. - 윈도우 사이즈 변경에 따라 이미지도 변경되어야 하므로*/
+    width: 100%; 
+    max-width: 1130px;
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    text-align: center;
-    overflow-x: hidden;
+    position: relative;
+}
+.visual .inner {
+    max-width:1130px;
+    height: 100%;
+    position: relative;
 }
 .visual .title {
     position: absolute;
@@ -98,7 +82,7 @@
 }
 .visual .cup3.text {
     position: absolute;
-    top: 2%;
+    top: 5%;
     left: 20%;
     width: 22%;
     
@@ -387,10 +371,14 @@
 
 /* SEASON PRODUCT */
 .season-product{
-    background-image: url("../images/season_product_bg.jpg");
+    background-image: url("/images/season_product_bg.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    left: 0; right: 0; top: 120px; bottom: 0; 
 }
 .season-product .inner{
-    height: 400px;
+    max-width: 1130px;
+    height: 100%;
 }
 
 .season-product .floating3{
@@ -398,13 +386,21 @@
     top: -200px;
     right: 0;
 }
+.season-product .img-group{
+    position: absolute;
+    left: 1%;
+}
+.season-product .img-group .product{
+    width: 60%;
+}
 .season-product .text-group{
     position: absolute;
-    top: 110px;
-    right: 100px;
+    top: 10%;
+    right: 9%;
 }
 .season-product .text-group .title{
     margin-bottom: 10px;
+    width: 30%;
 }
 .season-product .text-group .description{
     margin-bottom: 15px;
@@ -446,11 +442,11 @@
     background-size: cover;
 }
 .pick-your-favorite .inner{
-    padding: 110px 0;
+    padding: 10% 0;
 }
 .pick-your-favorite .text-group{
-    margin-left: 100px;    
-    width: 362px;
+    margin-left: 10%;           
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -465,7 +461,7 @@
 /* RESERVE STORE */
 
 .reserve-store {
-    background-image: url("../images/factory_bg2.png");
+    background-image: url("/images/factory_bg2.png");       
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -613,3 +609,35 @@
     align-items: center;
   }
   
+  
+@media screen and (max-width: 1130px) {
+    .visual.top{
+        height: 58vw;
+    }
+    .season-product,
+    .reserve-coffee {
+        height: 30vw;
+    }
+}
+@media screen and (max-width: 960px) {
+    .visual.top {
+        height: 59vw;
+        margin-top: 70px;
+    }
+    .season-product,
+    .reserve-coffee {
+        height: 31vw;
+    }
+}
+@media screen and (max-width: 640px) {
+    
+    .visual.top,
+    .visual.product {
+        height: 60vw;
+        margin-top: 70px;
+    }
+    .season-product,
+    .reserve-coffee {
+        height: 200px;
+    }
+}

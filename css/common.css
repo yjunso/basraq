@@ -17,11 +17,12 @@ img{
 a{
   text-decoration: none;
 }
-.inner{
-  width: 100%;
+.inner {
+  /* width는 항상 100%가 되어야 함. - 윈도우 사이즈 변경에 따라 이미지도 변경되어야 하므로*/
+  width: 100%; 
   margin: 0 auto;
-  position: relative;    
-} 
+  position: relative;
+}
 .btn{
   width: 130px;
   padding: 10px;
@@ -73,15 +74,17 @@ a{
   color: #333;
 }
 
+
+/*BACK TO POSITION*/
 .back-to-position{
   opacity: 0;
   transition: 1s;
 }
 .back-to-position.to-right{
-  transform: translateX(-150px) ;
+  transform: translateX(-250px) ;
 }
 .back-to-position.to-left{
-  transform: translateX(150px) ;
+  transform: translateX(250px) ;
 }
 .show .back-to-position{
   opacity: 1;

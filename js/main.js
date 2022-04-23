@@ -81,26 +81,26 @@ new Swiper('.awards .swiper', {
 })
 
  
-const btn_prom_pic = document.querySelector('.btn_prom');
-const promotionEl = document.querySelector('.promotion');
-const promotionToggleBtn = document.querySelector('.toggle-promotion');
-let isHidePromotion = false;
+// const btn_prom_pic = document.querySelector('.btn_prom');
+// const promotionEl = document.querySelector('.promotion');
+// const promotionToggleBtn = document.querySelector('.toggle-promotion');
+// let isHidePromotion = false;
 
-promotionToggleBtn.addEventListener('click', function(){
-  isHidePromotion = !isHidePromotion;
-  if(isHidePromotion){
-    //숨김 처리
-    promotionEl.classList.add('hide');
-    btn_prom_pic.setAttribute("src", "./images/btn_prom_down.png");
+// promotionToggleBtn.addEventListener('click', function(){
+//   isHidePromotion = !isHidePromotion;
+//   if(isHidePromotion){
+//     //숨김 처리
+//     promotionEl.classList.add('hide');
+//     btn_prom_pic.setAttribute("src", "./images/btn_prom_down.png");
     
-  }
-  else{
-    //활성화 처리
-    promotionEl.classList.remove('hide');
-    btn_prom_pic.setAttribute("src", "./images/btn_prom_up.png");
-  }
+//   }
+//   else{
+//     //활성화 처리
+//     promotionEl.classList.remove('hide');
+//     btn_prom_pic.setAttribute("src", "./images/btn_prom_up.png");
+//   }
 
-});
+// });
 
 
 function random(min, max){
@@ -126,12 +126,20 @@ function floatingObject(selector, delay, size){
 floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20); 
-
+ 
 const spyEls = document.querySelectorAll('section.scroll-spy');
+
+
+
 spyEls.forEach(function(spyEl){
+
+  console.log(spyEl);
+
   new ScrollMagic.Scene({
     triggerElement: spyEl,
     triggerHook: .8
-  }).setClassToggle(spyEl, 'show').addTo(new ScrollMagic.Controller());
-})
-
+  })
+  .setClassToggle(spyEl, 'show')
+  .addTo(new ScrollMagic.Controller()); 
+});
+ 
