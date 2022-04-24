@@ -44,6 +44,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 
 <script defer src="/js/youtube.js"></script>
+<!--jQuery -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
 <!-- <script defer src="/js/common.js"></script>  -->
 <script defer src="/js/main.js"></script> 
 
@@ -58,16 +61,85 @@
       <h1 class="logo">
         <a href="/" title="바스락 메인페이지(모바일)"></a>  
       </h1> 
-      <nav class="tablet_menu">
-        <ul>
-          <li class="tablet_01">
-            <a href="javascript:void(0);">
-              <span class="ally" role="button"></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="util_area">
+        <!-- <button class="tablet_menu">
+          <ul>
+            <li class="tablet_01">
+              <a href="javascript:void(0);">
+                <span class="ally" role="button"></span>
+              </a>
+            </li>
+          </ul>
+        </button> -->
+        <button class="btn_mnu" >
+          <span class="material-icons" style="font-size: 40px; margin-top: 15px; vertical-align: top; ">menu</span> 
+        </button> 
+      </div>
+      
     </div>
+
+
+    <!-- 640 gnb -->
+    <div class="mob_gnb_dimm" ></div>
+    <div class="mob_gnb_wrap">
+      <div class="mob_gnb_wrap_inner">
+        <aside class="btn_gnb_close"><a href="javascript:void(0);" title="메뉴닫기" role="button">닫기</a><!-- 접근성_20171106 title 추가 --></aside>
+        <nav class="mob_gnb_menus">
+          <!--#1-->
+          <!--#2-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">회사소개<span class="mob_gnb_arrow_down"></span></a><!-- 접근성_20171106 role 추가 --></li>
+          </ul>
+          <!--#3-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">제품소개<span class="mob_gnb_arrow_down"></span></a><!-- 접근성_20171106 role 추가 --></li>
+            <!-- <li>
+              <a role="button" href="javascript:void(0);">111<span class="mob_gnb_arrow_down"></span></a>
+            </li> -->
+          </ul>
+          <!--#4-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">주요파트너<span class="mob_gnb_arrow_down"></span></a><!-- 접근성_20171106 role 추가 --></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 640 gnb end -->
+    <!-- 
+    <section class="all_menu">
+      <div class="menu_scroll_area has_scroll">
+          <ul class="gnb initial">
+              <li>
+                  <a class="one_depth" href="javascript:" title="하위 메뉴 열기">ABOUT US</a>
+                  <div class="two_pack_wrap">
+                  <ul class="two_pack">
+                      <li>
+                          <a href="/kor/about/summary/company-introduction/contents.do?cntnSeq=172" class="two_depth">회사소개</a>
+                          
+                          <ul class="three_pack">
+                              <li>
+                                  <a href="/kor/about/summary/company-introduction/contents.do?cntnSeq=172" class="three_depth">기업소개</a>
+                              </li>
+                              <li>
+                                  <a href="/kor/about/summary/ceo/contents.do?cntnSeq=173" class="three_depth">CEO</a>
+                              </li>
+                              <li>
+                                  <a href="/kor/about/summary/history/contents.do?cntnSeq=174" class="three_depth">연혁</a>
+                              </li>
+                              </ul> 
+                          </li>
+                      
+
+                      </ul>
+                  </div>
+                  </li>
+              
+              
+              </ul>
+      </div>
+      <button class="btn_close" title="전체메뉴 닫기"><img src="../common/images/typeb-menu-xbt.png" alt=""> </button>
+       -->
+  </section>
     <div class="inner">
       <h1 class="logo">
         <a href="/" title="바스락 메인페이지"></a>  

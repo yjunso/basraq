@@ -1,3 +1,7 @@
+// $(document).ready(function () {
+// 	$.commonLib.init();
+// });
+
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');  
 
@@ -143,3 +147,48 @@ spyEls.forEach(function(spyEl){
   .addTo(new ScrollMagic.Controller()); 
 });
  
+
+
+/**
+ * 모바일 사이즈에서 메뉴 관리 
+ */
+
+// 메뉴-열기
+// const mnuEl = document.querySelector('header .util_area .btn_mnu');
+// // $("#header .util_area .btn_mnu").on("click", function(){        
+// //   console.log("test");
+// // });
+
+// mnuEl.addEventListener('click', function(){
+//   console.log("test");
+//   // gsap.to(window, .7, {
+//   //   scrollTo: 0
+//   // })
+// })
+
+$("header .util_area .btn_mnu").on("click", function(){     
+  console.log("clicked.");   
+  $(".mob_gnb_wrap").fadeIn(200, function(){
+     
+    $(".mob_gnb_dimm").removeClass("off");
+    $(".mob_gnb_dimm").addClass("on");
+     gsap.to($(".mob_gnb_wrap"), 1, {opacity:1, delay:0.2, ease:Power3.easeOut,display:'block',right:'0%'});
+  });
+});
+ 
+$(".btn_gnb_close").on("click", function(){     
+  console.log("close clicked.");   
+  //$(".mob_gnb_wrap").fadeOut(2000, function(){
+    $(".mob_gnb_dimm").removeClass("on");
+    $(".mob_gnb_dimm").addClass("off");
+     gsap.to($(".mob_gnb_wrap"), 1, {opacity:0, delay:0.2, ease:Power3.easeOut,display:'none',right:'-100%'});
+
+  //});
+});
+
+
+    // gsap.to(요소, 지속시간, 옵션);
+    // gsap.to(badgeEl, .6, {
+    //   opacity: 0,
+    //   display: 'none'
+    // });

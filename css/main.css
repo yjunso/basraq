@@ -628,6 +628,7 @@
     .reserve-coffee {
         height: 31vw;
     }
+    
 }
 @media screen and (max-width: 640px) {
     
@@ -640,4 +641,5 @@
     .reserve-coffee {
         height: 200px;
     }
+
 }
