@@ -424,13 +424,26 @@
 }
 .reserve-coffee .text-group{
     position: absolute;
-    top: 124px;
-    left: 208px;
+    top: 10%;
+    left: 35%;
+    width: 50%;
+}
+.reserve-coffee .text-group .description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
 }
 .reserve-coffee .product{
     position: absolute;
     top: 0;
     right: 0;
+    width: 30%;
+}
+.reserve-coffee .inner .more{
+    position: absolute;
+    margin-top: 25%;
+    width: 30%;
 }
 
 /* PICK YOUR FAVORITE */
@@ -530,22 +543,28 @@
 }
 .find-store .picture1{
     top: -60px;
-    left: 0;
+    left: 0;    
+    width: 30%;
 }
 .find-store .picture2{
     top: 40%;
     left: 20%;
+    width: 30%;
 }
 .find-store .text-group{
     position: absolute;
     top: 30%;
     right: 10%;
+    
+    width: 30%;
 }
 .find-store .text-group .title{
     margin-bottom: 20px;
+    width: 100%;
 }
 .find-store .text-group .description{
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /*AWARDS*/
