@@ -554,9 +554,9 @@
 .find-store .text-group{
     position: absolute;
     top: 30%;
-    right: 10%;
+    left: 50%;
     
-    width: 30%;
+    width: 40%;
 }
 .find-store .text-group .title{
     margin-bottom: 20px;
@@ -566,7 +566,10 @@
     margin-bottom: 20px;
     width: 100%;
 }
-
+.find-store .text-group .more{
+    margin-bottom: 20px;
+    width: 60%;
+}
 /*AWARDS*/
 .awards {
     background-color: #272727;
