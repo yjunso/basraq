@@ -50,12 +50,12 @@
     /* bottom: 50px; */
     width: 13%;
     top: 19%;
-    right: 0px;
+    right: 2px;
 }
 .visual .cup1.text {
     position: absolute;
     top: 6.5%;
-    right: -1%;
+    right: 1%;
     width: 17%;
 }
 .visual .cup2.image {
@@ -533,14 +533,13 @@
     left: 0;
 }
 .find-store .picture2{
-    top: 150px;
-    left: 250px;
+    top: 40%;
+    left: 20%;
 }
 .find-store .text-group{
     position: absolute;
-    top: 120px;
-    left: 550px;
-    
+    top: 30%;
+    right: 10%;
 }
 .find-store .text-group .title{
     margin-bottom: 20px;
