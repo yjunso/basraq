@@ -243,6 +243,13 @@ header .util_area {
   header h1.logo a { 
     background:url("/images/basraq_logo_75.png"); background-size:81px auto; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; 
   }
+
+  
+/* 모바일사이즈에서는 텍스트메뉴로 오른쪽 여백 생김 문제, 수정*/
+  .back-to-position.to-left{
+    transform: translateY(50%) ; 
+  }
+
 }
 header .sub-menu{
   position: absolute;
