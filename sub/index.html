@@ -24,7 +24,7 @@
 <meta property="twitter:description" content="바스락은 세계에서 가장 패셔너블한 스낵 전문 제조업체로, 총 ??개 국가에 수출하고 있습니다." />
 <meta property="twitter:image" content="/images/basraq_seo.jpg" />
 <meta property="twitter:url" content="https://basraq.co.kr" />
-    
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 <link rel="icon" href="/favicon.png">
@@ -33,50 +33,97 @@
 <link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/sub.css">
 
-<script defer src="/js/common.js"></script> 
+<link rel="stylesheet" href="/css/main.css">
 
+<!--GSAP & ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
 
+<!-- <script defer src="/js/common.js"></script>  -->
+<!--jQuery 22.04.24-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+<script defer src="/js/menu.js"></script> 
+
+<!--including menu-->
+<script type="text/javascript">   
+  $(document).ready( function() {
+  
+  //$("#headers").load("/header.html");  // 메뉴를 포함한 header 부분
+  $("#footers").load("/footer.html");  // 마지막 footer 부분
+  
+  });
+</script>
+<!--including menu end-->
 </head>
 
 <body>
-  <!-- HEADER -->
+<!-- incl. HEADER -->
+<!-- <div id="headers"></div> -->
+<!-- incl. HEADER END --> 
+
+<!-- HEADER -->
+<div id="container">
   <header>
     <div class="tablet_inner">
       <h1 class="logo">
-        <a href="/" title="바스락 메인페이지"></a>  
+        <a href="/" title="바스락 메인페이지(모바일)"></a>  
       </h1> 
+      <div class="util_area">
+        <button class="btn_mnu" >
+          <span class="material-icons" style="font-size: 40px; margin-top: 15px; vertical-align: top; ">menu</span> 
+        </button> 
+      </div>      
     </div>
+
+
+    <!-- 640 menu start -->
+    <div class="mob_gnb_dimm" ></div>
+    <div class="mob_gnb_wrap">
+      <div class="mob_gnb_wrap_inner">
+        <aside class="btn_gnb_close"><a href="javascript:void(0);" title="메뉴닫기" role="button">닫기</a></aside>
+        <nav class="mob_gnb_menus">
+          <!--#1-->
+          <!--#2-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" href="javascript:void(0);">회사소개<span class="mob_gnb_arrow_down"></span></a></li>
+            <ul style="display: none;">
+              <li><a href="/sub/index.html">CEO 인사말</a></li>
+              <li><a href="/sub/history.html">회사연혁</a></li>
+              <li><a href="/sub/factory.html">주요 생산설비</a></li>
+            </ul>
+          </ul>
+
+        <!--#3-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">제품소개<span class="mob_gnb_arrow_down"></span></a></li>
+            <ul style="display: none;">
+              <li><a href="/sub/index.html">빙빙</a></li>
+              <li><a href="/sub/history.html">그레인</a></li>
+              <li><a href="/sub/factory.html">씬포테이토</a></li>
+            </ul>
+          </ul>
+          <!--#4-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">주요파트너<span class="mob_gnb_arrow_down"></span></a><!-- 접근성_20171106 role 추가 --></li>
+            <ul style="display: none;">
+              <li><a href="/sub/index.html">국내</a></li>
+              <li><a href="/sub/history.html">해외</a></li>
+              <li><a href="/sub/factory.html">세계속의 바스락</a></li>
+            </ul>
+          
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 640 menu end -->
     
+    <!-- over 640 menu start -->
     <div class="inner">
       <h1 class="logo">
         <a href="/" title="바스락 메인페이지"></a>  
       </h1>
-      
-        <!-- <img src="./images/basraq_logo_75.png" alt="BASRAQ"/> -->
-   
-      <!-- 
-      <div class="sub-menu">
-        <ul class="menu">
-          <li>
-            <a href="/signin">Sign In</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">My Starbucks</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">Customer Service & Ideas</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">Find a Store</a>
-          </li>
-        </ul>
-        <div class="search">
-          <input type="text">
-          <div class="material-icons">search</div>
-        </div>
-      </div> -->
-
+        
       <ul class="main-menu">
         <li class="item">
           <div class="item__name"><a href="#intro">회사소개</a></div>
@@ -85,25 +132,16 @@
               <ul class="inner">
                 <li>
                   <h4><a href="/sub/index.html">CEO인사말</a></h4>
-                  
                 </li>
                 <li>
                   <h4><a href="/sub/history.html">회사연혁</a></h4>
-                  
                 </li>
                 <li>
                   <h4><a href="/sub/factory.html">주요 생산설비</a></h4>
-                  
                 </li>
               </ul>
             </div>
-            <!-- <div class="contents__texture">
-              <div class="inner">
-                <h4>나와 어울리는 과자 찾기</h4>
-                <p>바스락이 여러분에게 어울리는 과자를 찾아드립니다.</p>
-                
-              </div>
-            </div> -->
+            
           </div>
         </li>
         <li class="item">
@@ -113,24 +151,15 @@
               <ul class="inner">
                 <li>
                   <h4>빙빙</h4>
-                  
                 </li>
                 <li>
                   <h4>그레인</h4>
-                  
                 </li>
                 <li>
                   <h4>씬포테이토</h4>
-                  
                 </li>
               </ul>
             </div>
-            <!-- <div class="contents__texture">
-              <div class="inner">
-                <h4 class="new">바스락 빙빙</h4>
-                <p>정제된 초콜릿 재료로 새로운 콘스낵을 선보입니다.</p>
-              </div>
-            </div> -->
           </div>
         </li>
         <li class="item">
@@ -140,65 +169,32 @@
               <ul class="inner">
                 <li>
                   <h4>국내</h4>
-                  
                 </li>
                 <li>
                   <h4>해외</h4>
-                  
                 </li>
                 <li>
                   <h4>세계속의 바스락</h4>
-                  
                 </li>
               </ul>
             </div>
-            <!-- <div class="contents__texture">
-              <div class="inner">
-                <h4>Contact US</h4>
-                <p>보다 빠르게 매장을 찾아보세요.</p>
-                <h4 class="new">...</h4>
-                <p>...</p>
-              </div>
-            </div> -->
+
           </div>
         </li>
         
         <li class="item">
           <div class="item__name">CONTACT US</div>
-          <!-- <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                
-                <li>
-                  <h4>주소/연락처/이메일주소</h4>
-                  
-                </li>
-                
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>제품주문/맞춤제작</h4>
-                <p>제품 주문이나 맞춤 주문도 하실 수 있습니다.</p>
-                
-              </div>
-            </div>
-          </div> -->
+
         </li>
       </ul>
     </div> 
+    <!-- over 640 menu end -->
 
-    <!-- <div class="badges">
-      <div class="badge">
-        <img src="./images/badge3.jpg" alt="Badge">
-      </div>
-      <div class="badge">
-        <img src="./images/badge2.jpg" alt="Badge">
-      </div>
-    </div> -->
-    
   </header>
- 
+  </div>
+  <!--HEADER END-->
+
+
   <section class="sub">
     <!-- CONTAINER -->
     <div class="sub_tit_wrap">
@@ -288,37 +284,9 @@
   </div>
 
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="inner">
-      <!-- <ul class="menu">
-        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
-        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
-
-      </ul> -->
-      <div class="btn-group">
-        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
-        <a href="javascript:void(0)" class="btn btn--white">신규입점제의</a>
-        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
-      </div>
-
-      <div class="info">
-        <span>사업자등록번호 </span>
-        <span>(주)바스락 </span>
-        <span>TEL :  </span>
-        <span>개인정보 책임자 : </span>
-
-      </div>
-
-      <p class="copyright">
-        &copy; <span class="this-year"></span>  Basraq Company. All Rights Reserved.
-      </p>
-      <img src="/images/basraq_logo_only_text.png" alt="" class="logo">
-    </div>
-  </footer>
+<!-- FOOTER -->
+<div id="footers"></div>
+<!-- FOOTER END --> 
 
 </body>
 </html>
