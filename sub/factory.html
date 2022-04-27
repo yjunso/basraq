@@ -42,11 +42,12 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script defer src="/js/menu.js"></script> 
+
 <!--including menu-->
 <script type="text/javascript">   
   $(document).ready( function() {
   
-  $("#headers").load("/header.html");  // 메뉴를 포함한 header 부분
+  //$("#headers").load("/header.html");  // 메뉴를 포함한 header 부분
   $("#footers").load("/footer.html");  // 마지막 footer 부분
   
   });
@@ -55,9 +56,141 @@
 </head>
 
 <body>
+<!-- incl. HEADER -->
+<!-- <div id="headers"></div> -->
+<!-- incl. HEADER END --> 
+
 <!-- HEADER -->
-<div id="headers"></div>
-<!-- HEADER END --> 
+<div id="container">
+  <header>
+    <div class="tablet_inner">
+      <h1 class="logo">
+        <a href="/" title="바스락 메인페이지(모바일)"></a>  
+      </h1> 
+      <div class="util_area">
+        <button class="btn_mnu" >
+          <span class="material-icons" style="font-size: 40px; margin-top: 15px; vertical-align: top; ">menu</span> 
+        </button> 
+      </div>      
+    </div>
+
+
+    <!-- 640 menu start -->
+    <div class="mob_gnb_dimm" ></div>
+    <div class="mob_gnb_wrap">
+      <div class="mob_gnb_wrap_inner">
+        <aside class="btn_gnb_close"><a href="javascript:void(0);" title="메뉴닫기" role="button">닫기</a></aside>
+        <nav class="mob_gnb_menus">
+          <!--#1-->
+          <!--#2-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" href="javascript:void(0);">회사소개<span class="mob_gnb_arrow_down"></span></a></li>
+            <ul style="display: none;">
+              <li><a href="/sub/index.html">CEO 인사말</a></li>
+              <li><a href="/sub/history.html">회사연혁</a></li>
+              <li><a href="/sub/factory.html">주요 생산설비</a></li>
+            </ul>
+          </ul>
+
+        <!--#3-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">제품소개<span class="mob_gnb_arrow_down"></span></a></li>
+            <ul style="display: none;">
+              <li><a href="/sub/index.html">빙빙</a></li>
+              <li><a href="/sub/history.html">그레인</a></li>
+              <li><a href="/sub/factory.html">씬포테이토</a></li>
+            </ul>
+          </ul>
+          <!--#4-->
+          <ul>
+            <li class="mob_gnb_ttl2"><a role="button" class="en" href="javascript:void(0);">주요파트너<span class="mob_gnb_arrow_down"></span></a><!-- 접근성_20171106 role 추가 --></li>
+            <ul style="display: none;">
+              <li><a href="/sub/index.html">국내</a></li>
+              <li><a href="/sub/history.html">해외</a></li>
+              <li><a href="/sub/factory.html">세계속의 바스락</a></li>
+            </ul>
+          
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 640 menu end -->
+    
+    <!-- over 640 menu start -->
+    <div class="inner">
+      <h1 class="logo">
+        <a href="/" title="바스락 메인페이지"></a>  
+      </h1>
+        
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name"><a href="#intro">회사소개</a></div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4><a href="/sub/index.html">CEO인사말</a></h4>
+                </li>
+                <li>
+                  <h4><a href="/sub/history.html">회사연혁</a></h4>
+                </li>
+                <li>
+                  <h4><a href="/sub/factory.html">주요 생산설비</a></h4>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">제품소개</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>빙빙</h4>
+                </li>
+                <li>
+                  <h4>그레인</h4>
+                </li>
+                <li>
+                  <h4>씬포테이토</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">주요파트너</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>국내</h4>
+                </li>
+                <li>
+                  <h4>해외</h4>
+                </li>
+                <li>
+                  <h4>세계속의 바스락</h4>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        
+        <li class="item">
+          <div class="item__name">CONTACT US</div>
+
+        </li>
+      </ul>
+    </div> 
+    <!-- over 640 menu end -->
+
+  </header>
+  </div>
+  <!--HEADER END-->
  
 <section class="sub">
   <!-- <h1>로그인</h1> -->
