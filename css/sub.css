@@ -35,6 +35,14 @@
   margin-bottom: 24px;
 }
 
+.sub h2{
+  color: #000;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
 #container {
     width: 100%;
 }
@@ -248,10 +256,10 @@ img._center {
   color: #656565;
 
 }*/
-a{
+/* a{
   font-size: 14px;
   color: gray;
-}
+} */
 .side ul.menu li a{
   font-size: 13px;
   padding: 11px 16px;
@@ -464,3 +472,12 @@ div.coffeeCultivation_wrap dl.cultivation_text dt { font-size:20px; color:#00663
 div.coffeeCultivation_wrap dl.cultivation_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; } */
 
 
+dt.product_bb {
+  padding: 10px;
+  background: rgb(254, 138, 176);
+  margin-bottom: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 20px;
+  color: #fff;
+} 

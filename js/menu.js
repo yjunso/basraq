@@ -15,6 +15,24 @@
 //   // })
 // })
 
+// var clsElts = document.getElementsByTagName('*');
+// console.log(clsElts);
+
+// Array.prototype.forEach.call(allElements, function(el) {
+  
+
+// });
+// mnuEl.on("click", function(){     
+  
+//   console.log("1st js btn clicked.");   
+// });
+
+
+
+
+// document.getElementById("btn_menu").onclick = function() {
+//   console.log("2nd js btn clicked.");   
+// };
 
 
 $("header .util_area .btn_mnu").on("click", function(){     
