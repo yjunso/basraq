@@ -440,8 +440,8 @@ div.cultivation_wrap:after {
 
 div.cultivation_text { 
   float:left; 
-  width:500px; 
-  padding:0 0 0 30px; 
+  width:70%; 
+  padding:0 0 0 20px; 
 }
 div.cultivation_text h3 { 
   font-size:18px; 
@@ -461,7 +461,7 @@ div.cultivation_text p.t2 {
   line-height:1.6; 
 }
 
-dl.cultivation_text { float:left; width:402; padding:0 0 0 30px; }
+dl.cultivation_text { float:left; padding:0 0 0 30px; }
 dl.cultivation_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; }
 dl.cultivation_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; } 
 /* 
@@ -481,3 +481,59 @@ dt.product_bb {
   font-size: 20px;
   color: #fff;
 } 
+
+dt.product_ediya {
+  padding: 30px;
+  /* background: rgb(255, 243, 188); */
+  background-image: url("/images/ediya_logo_wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: right;
+  color: rgb(255, 255, 255);
+} 
+
+ul.product {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+ul.product > li {
+  width: 49%;
+  margin: 0.5%;
+  position: relative;
+  float: left;
+}
+ul.product > li > dl {
+  width: 100%;
+}
+ul.product > li > dl > dt {
+  width: 100%;
+  height: auto;
+  
+  overflow: hidden;
+}
+ul.product > li > dl > dt  > a > img {
+  height: auto;
+  width: 100%;
+  transform: scale(1.0);
+  transition: 1.2s;
+}
+ul.product > li > dl > dt  > a > img:hover{
+  transform: scale(1.1);
+  transition: 1.2s;
+}
+ul.product > li > dl > dd {
+  font-size: 18px;
+  color: #444;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
