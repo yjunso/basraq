@@ -355,6 +355,7 @@ img._center {
 div.factory_wrap {
   background: #fff;
   margin-bottom: 10px;
+  height: auto;
 }
 div.factory_2nd_wrap {
   background: #f4f4f2;
@@ -476,24 +477,56 @@ dt.product_bb {
   padding: 10px;
   background: rgb(254, 138, 176);
   margin-bottom: 10px;
-  border-radius: 3px;
+  border-radius: 9px;
   overflow: hidden;
   font-size: 20px;
   color: #fff;
 } 
 
 dt.product_ediya {
-  padding: 30px;
-  /* background: rgb(255, 243, 188); */
-  background-image: url("/images/ediya_logo_wide.jpg");
+  padding: 5px;
+  background: rgb(42, 71, 191);
+  /* background-image: url("/images/ediya_logo_wide.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 10px;
-  border-radius: 3px;
+  background-size: cover; */
+  margin-bottom: 0px;
+  border-radius: 9px;
   font-size: 16px;
   text-align: right;
   color: rgb(255, 255, 255);
 } 
+
+dt.product_tourjour {
+  padding: 5px;
+  background: rgb(64, 116, 78);
+  /* background-image: url("/images/ediya_logo_wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  margin-bottom: 0px;
+  border-radius: 9px;
+  font-size: 16px;
+  text-align: right;
+  color: rgb(255, 255, 255);
+} 
+
+dt.product_babybus {
+  padding: 5px;
+  background: rgb(147, 194, 255);
+  /* background-image: url("/images/ediya_logo_wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  margin-bottom: 0px;
+  border-radius: 9px;
+  font-size: 16px;
+  text-align: right;
+  color: rgb(255, 236, 236);
+} 
+
+
+.product_ediya_text {
+  text-align: left;
+  font-size: 22px;
+}
 
 ul.product {
   width: 100%;
@@ -516,16 +549,27 @@ ul.product > li > dl > dt {
   
   overflow: hidden;
 }
-ul.product > li > dl > dt  > a > img {
+ul.product img {
   height: auto;
   width: 100%;
-  transform: scale(1.0);
+  transform: scale(1.0); 
   transition: 1.2s;
 }
-ul.product > li > dl > dt  > a > img:hover{
+ul.product img:hover{
   transform: scale(1.1);
   transition: 1.2s;
 }
+ul.product .t_eff {
+  height: auto;
+  width: 100%;
+  transform: scale(1.0); 
+  transition: 1.2s;
+}
+ul.product .t_eff:hover{
+  transform: scale(1.1);
+  transition: 1.2s;
+}
+
 ul.product > li > dl > dd {
   font-size: 18px;
   color: #444;
