@@ -465,7 +465,7 @@ div.cultivation_text p.t2 {
 
 dl.cultivation_text { float:left; padding:0 0 0 30px; }
 dl.cultivation_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; }
-dl.cultivation_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; } 
+dl.cultivation_text dd p.text1 { font-size:13px; color:#444; line-height:1.6; padding-bottom:15px; flex-wrap: wrap; } 
 /* 
 div.coffeeCultivation_wrap div.cultivation_wrap { padding-bottom:0; }
 div.coffeeCultivation_wrap h3 { font-size:18px; font-weight:bold; color:#222; margin:0 0 20px 0; }
