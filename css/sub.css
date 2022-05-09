@@ -493,6 +493,7 @@ dt {
 } 
 dt.partner {
   text-align: left;
+  width: 100%;
 } 
 
 dt.lineup_bb{
@@ -632,7 +633,10 @@ ul.product > li.partners{
   float: left;
 }
 
-
+ul.product > li.partners img {
+  width: 100%;
+  min-width: 180px;
+}
 ul.product > li.data img {
   width: 100%;
   transform: scale(1.0);  
