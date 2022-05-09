@@ -632,10 +632,18 @@ ul.product > li.partners{
   position: relative;
   float: left;
 }
-
+ul.product > li.world{
+  width: 100%;
+  position: relative;
+  float: left;
+}
+ul.product > li.world img {
+  width: 100%;
+  min-width: 640px;
+}
 ul.product > li.partners img {
   width: 100%;
-  min-width: 180px;
+  min-width: 150px;
 }
 ul.product > li.data img {
   width: 100%;
