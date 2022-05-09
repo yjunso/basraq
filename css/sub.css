@@ -377,6 +377,7 @@ div.factory_content {
 p.cultivation_img { 
   float:left; 
   width:402px; 
+  
 }
 @media screen and (min-width: 961px) and (max-width: 1099px){
   div.factory_content {
